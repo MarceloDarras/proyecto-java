@@ -1,0 +1,94 @@
+.contenedorHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: aquamarine;
+}
+
+.contenedorHeader h3 {
+    padding-left: 10px;
+    color: black;
+}
+
+.contenedorHeader h3:hover {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedorFooter{
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+}
+
+.boxFooter{
+    border: solid cyan;
+    width: 33.3%;
+    text-align: center;
+    padding: 20px;
+}
+
+.boxFooter img{
+    width: 30px;
+    height: 30px;
+}
+
+.boxItems{
+    display: flex;
+    align-items: center;
+}
+
+.boxItems img{
+    padding-right: 15px;
+}
+
+.boxItems a:hover{
+    color: pink;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box i{
+    padding-right: 15px;
+}
+
+.contenedor{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+}
+
+table, th,tr{
+    text-align: center;
+}
+
+.data1{
+    background-color: blue;
+    height: 50px;
+}
+
+.data2{
+    background-color: rgb(149, 16, 16);
+    height: 50px;
+}
+
+.titulo{
+    background-color: rgb(50, 108, 59);
+    height: 30px;
+}
