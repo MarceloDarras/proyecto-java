@@ -117,8 +117,35 @@ function eventDblClick(){
 function eventChange(){
     console.log("Evento change");
 }
-
+function datos(){
+    let miVariable = 10;
+}
 function ontenerValorInput(){
     let var1 = document.getElementById("txtNumero1").value;
     console.log("Valor input: " + var1);
+
+    console.log("Valor variable uno: ", variableUno);
+    console.log("Esta es la variable que está en la función: ", miVariable);
 }
+
+document.getElementById("ocultar").style.display = "none";
+
+
+
+function pass(){
+    let input = document.getElementById("txtContraseña");
+
+    if(input.type == "password"){
+        input.type = "text"
+        document.getElementById("ocultar").style.display = "inline";
+        document.getElementById("mostrar").style.display = "none";
+    }else{
+        input.type = "password"
+        document.getElementById("ocultar").style.display = "none";
+        document.getElementById("mostrar").style.display = "inline";
+    }
+}
+
+
+
+
