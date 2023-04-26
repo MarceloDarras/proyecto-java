@@ -39,3 +39,47 @@ $("#primero").mouseenter(function(){
     $("#cuarto").animate({marginTop: "0px"});
     console.log("Intervalo");
 },1000) */
+
+$tiempo = document.querySelector('.tiempo');
+
+function relojDigital(){
+    let f = new Date();
+    let stringHora = f.toLocaleTimeString();
+    $tiempo.innerHTML = stringHora;
+}
+setInterval( () => {
+    relojDigital();
+})
+
+$(function(){
+    $("#miFormulario").validate({
+        rules:{
+            rut:{
+                required: true,
+                minlength: 5
+            },
+            nombre:{
+                required: true,
+                minlength: 5
+            },
+            apellido:{
+                required: true,
+                minlength: 5
+            }
+        },
+        messages:{
+            rut:{
+                required: "Debe ingresar su Rut.",
+                minlength: "Debe ingresar minimo 5 caracteres"
+            },
+            nombre:{
+                required: "Debe ingresar su Nombre.",
+                minlength: "Debe ingresar minimo 5 caracteres"
+            },
+            apellido:{
+                required: "Debe ingresar su Apellido.",
+                minlength: "Debe ingresar minimo 5 caracteres"
+            }
+        }
+    })
+})
