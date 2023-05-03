@@ -22,11 +22,11 @@ $("#botonMostrar").click(function(){
     $("#botonOcultar").show();
 })
 
-$("#segundo").mouseenter(function(){
+/*$("#segundo").mouseenter(function(){
     $("#quinto").fadeOut();
 })
 
-$("#primero").mouseenter(function(){
+/*$("#primero").mouseenter(function(){
     $("#quinto").fadeIn();
 })
 /*setInterval(function(){
@@ -39,6 +39,13 @@ $("#primero").mouseenter(function(){
     $("#cuarto").animate({marginTop: "0px"});
     console.log("Intervalo");
 },1000) */
+$("#segundo").on("mouseenter", function(){
+    $("#quinto").fadeOut();
+})
+
+$("#primero").on("mouseenter",function(){
+    $("#quinto").fadeIn();
+})
 
 $tiempo = document.querySelector('.tiempo');
 
@@ -82,4 +89,24 @@ $(function(){
             }
         }
     })
+})
+
+$.getJSON('https://mindicador.cl/api', function(data){
+    console.log(data.dolar.valor);
+
+    const contenedor = document.getElementById("contenedor");
+    const row = document.createElement("div");
+    const col = document.createElement("div");
+    const h3 = document.createElement("h3");
+
+    h3.textContent = "El valor del dolar es: " + data.dolar.valor;
+
+    row.classList.add("row");
+    col.classList.add("col");
+    col.classList.add("mt-5");
+    contenedor.appendChild(row);
+    row.appendChild(col);
+    col.appendChild(h3);
+
+
 })
