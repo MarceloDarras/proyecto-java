@@ -1,0 +1,19 @@
+.reloj{
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.error{
+    color: red;
+}
+
+.body{
+    filter: invert(0%);
+}
+.inverted{
+    filter: invert(100%);
+}

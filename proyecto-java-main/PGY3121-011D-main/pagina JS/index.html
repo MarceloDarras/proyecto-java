@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inicio</title>
+</head>
+<body>
+
+    <h1>Pagina web con JS</h1>
+    
+<!-- 
+    <script>
+        console.log("Hola mundo");
+    </script> -->
+
+    <input type="text" id="txtNumero1" onblur="eventOnblur()" placeholder="BLUR">
+    <br>
+    <input type="text" onfocus="eventFocus()" placeholder="FOCUS">
+    <br>
+    <button onclick="eventClick()">Click</button>
+    <br>
+    <input type="text" placeholder="Key Down" onkeydown="eventKeyDown()">
+    <br>
+    <input type="text" placeholder="Key Up" onkeyup="eventKeyUp()">
+    <br>
+    <h1 ondblclick="eventDblClick()">Doble click</h1>
+    <br>
+    <select name="" id="" onchange="eventChange()">
+        <option value="null" disabled selected >Seleccione</option>
+        <option value="1"> Chile</option>
+        <option value="2"> Perú</option>
+        <option value="3">Argentina</option>
+    </select>
+
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>
